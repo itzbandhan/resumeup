@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download CV | Bandhan Pokhrel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="btn-container">
+            <button class="button" id="downloadBtn" >
+    Download CV
+    <div id="clip">
+        <div id="leftTop" class="corner"></div>
+        <div id="rightBottom" class="corner"></div>
+        <div id="rightTop" class="corner"></div>
+        <div id="leftBottom" class="corner"></div>
+    </div>
+    <span id="rightArrow" class="arrow"></span>
+    <span id="leftArrow" class="arrow"></span>
+</button>
+
+
+        </div>
+    </div>
+</body>
+<script>
+document.getElementById('downloadBtn').addEventListener('click', function() {
+    // Create a link element
+    const link = document.createElement('a');
+
+    // Set the href attribute to the URL of the file
+    link.href = 'cv.pdf';
+
+    // Set the download attribute with a filename
+    link.download = 'cv.pdf';
+
+    // Append the link to the document body
+    document.body.appendChild(link);
+
+    // Simulate a click on the link to trigger the download
+    link.click();
+
+    // Remove the link from the document
+    document.body.removeChild(link);
+
+    alert("Please Check your Downloads folder for the cv!!!");
+    location.href = "https://bandhanpokhrel.com.np/"
+});
+
+</script>
+</html>
