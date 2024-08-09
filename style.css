@@ -92,7 +92,7 @@ button{
 .btnn:hover .clone > :nth-child(4) {
   transition-delay: 0.3s;
 }
-/* icon style and hover */
+
 .btnn svg {
   width: 20px;
   right: 0;
