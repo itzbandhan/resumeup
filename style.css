@@ -27,8 +27,7 @@ button{
   cursor: pointer;
 }
 
-.btnn > div,
-.btnn > svg {
+.btnn > div, .btnn > svg {
   position: absolute;
   width: 100%;
   height: 100%;
